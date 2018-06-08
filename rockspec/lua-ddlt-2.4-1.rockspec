@@ -1,8 +1,8 @@
 package = "lua-ddlt"
-version = "2.3-2"
+version = "2.4-1"
 source = {
   url = "git+https://github.com/leiradel/ddlt.git",
-  branch = "2/3/2"
+  branch = "2/4/1"
 }
 description = {
   summary = "A generic lexer to help writing parsers using Lua",
