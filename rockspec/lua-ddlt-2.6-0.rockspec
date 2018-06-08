@@ -1,17 +1,9 @@
--- This file was automatically generated for the LuaDist project.
-
 package = "lua-ddlt"
-version = "2.5-0"
--- LuaDist source
+version = "2.6-0"
 source = {
-  tag = "2.5-0",
-  url = "git://github.com/LuaDist-testing/lua-ddlt.git"
+  url = "git+https://github.com/leiradel/ddlt.git",
+  branch = "2/6/0"
 }
--- Original source
--- source = {
---   url = "git+https://github.com/leiradel/ddlt.git",
---   branch = "2/5/0"
--- }
 description = {
   summary = "A generic lexer to help writing parsers using Lua",
   homepage = "https://github.com/leiradel/ddlt",
