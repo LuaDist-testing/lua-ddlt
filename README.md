@@ -99,7 +99,7 @@ local parse = function(file)
     language = 'cpp',
     symbols = {'{', '}', ',', ';', '='},
     keywords = {'enum', 'struct', 'string', 'int', 'float'},
-    freeform = {'[{', '}]'}
+    freeform = {{'[{', '}]'}}
   }
 
   local tokens = {}
@@ -323,10 +323,14 @@ The return value of `newTemplate` is a Lua function that will run the template w
 
 ## Changelog
 
+### 2.8.0
+
+* *Breaking change*: the `freeform` field of the lexer options table can now specify multiple delimiters, i.e. `{{'[{', '}]'}, {'(', ')'}}`
+
 ### 2.7.0
 
 * Fixed not erroring on unterminated strings
-* Added decimal deparator to C++
+* Added decimal separator to C++
 * Better handling of suffixes
 * Added user-defined number literal suffixes to C++ numbers and strings
 * Run `boot.lua` through [LuaSrcDiet](https://github.com/jirutka/luasrcdiet) to save space
